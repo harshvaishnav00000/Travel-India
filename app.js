@@ -10,8 +10,6 @@ var express     = require("express"),
     Comment     = require("./models/comment"),
     User        = require("./models/user"),
     seedDB      = require("./seeds")
-	// request     = require("request")
-
 
     
 //requiring routes
@@ -19,7 +17,8 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-mongoose.connect("mongodb://localhost/yelp_camp_v10");
+mongoose.connect("mongodb+srv://harsh:harshvaishnav@cluster0-rn4hs.mongodb.net/test?retryWrites=true&w=majority");
+// mongoose.connect("mongodb://localhost/yelp_camp_v10");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -49,15 +48,6 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
-
-//
-
-// request("https://www.tripadvisor.in/Attraction_Review-g297683-d317329-Reviews-Taj_Mahal-Agra_Agra_District_Uttar_Pradesh.html", function(error, response, body){
-// 	if(!error && response.statusCode == 200){
-// 		 var data = JSON.parse(body);
-// 		console.log(data);
-// 	}
-// })
 
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
