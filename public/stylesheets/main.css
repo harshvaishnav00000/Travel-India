@@ -18,9 +18,26 @@
 	padding-top: 20%;
 }
 
-.jumbotron{
-	background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#landing3{
+	background-image: url("https://www.narcity.com/u/2018/08/16/8404a8b6f2edf60e0882a92877ea8fdf561e3a9b.jpg_1200x630.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
 
+#landing1{
+	text-align: center;
+	margin-top: 3em;
+	font-size: 5em;
+	color: white;
+	font-family: 'Dancing Script', cursive;
+}
+#landing2{
+	font-weight: 10px;
+	font-size: 18px;
+	border-radius: 6px;
+	line-height: 1.333;
+	padding: 10px 16px;
+	margin: 0 40%;
 }
