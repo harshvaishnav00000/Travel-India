@@ -21,9 +21,8 @@
 #landing3{
 	background-image: url("https://www.narcity.com/u/2018/08/16/8404a8b6f2edf60e0882a92877ea8fdf561e3a9b.jpg_1200x630.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 #landing1{
@@ -40,4 +39,25 @@
 	line-height: 1.333;
 	padding: 10px 16px;
 	margin: 0 40%;
+}
+body{
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron{
+	background: no-repeat url("https://www.tripsavvy.com/thmb/K_j2pTJNiNIJ_0M64CktwOMF0kg=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1057950702-11aa2a04a9214f6e9724ed190df69703.jpg");
+	background-position: center;
+    background-size: cover;
+	margin-bottom: 100px; 
+}
+.jumbotron-div{
+	margin-top: 15%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgba(10, 130, 4, .3);
+    text-align: center;
+    color: white;
 }
