@@ -19,10 +19,11 @@
 }
 
 #landing3{
-	background-image: url("https://www.narcity.com/u/2018/08/16/8404a8b6f2edf60e0882a92877ea8fdf561e3a9b.jpg_1200x630.jpg");
-	background-repeat: no-repeat;
+		background: url("https://www.narcity.com/u/2018/08/16/8404a8b6f2edf60e0882a92877ea8fdf561e3a9b.jpg_1200x630.jpg") no-repeat center center 		fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: fixed;
 }
 
 #landing1{
@@ -38,7 +39,8 @@
 	border-radius: 6px;
 	line-height: 1.333;
 	padding: 10px 16px;
-	margin: 0 40%;
+	margin-bottom:200px;
+	margin-left: 35%;
 }
 body{
 background: #000000;  /* fallback for old browsers */
